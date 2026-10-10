@@ -1,0 +1,85 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boba Avatar Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <span class="tag">Pratik Presents</span>
+        <h1>Boba Shop 🧋</h1>
+        <p>Create edit and download ur own handmade boba PFP</p>
+    </header>
+
+    <div class="studio">
+        <div class="panel">
+            <div class="preview">
+                <svg id="avatar" viewBox="0 0 100 100" xmlns="http://w3.org">
+                    <rect id="bg" width="100" height="100" fill="#fdf6ec"/>
+                    
+                    <g transform="translate(15, 15)">
+                        <path d="M55 20 L65 5" stroke="#e6ccb2" stroke-width="6" stroke-linecap="round"/>
+                        
+                        <path d="M25 20 H75 L70 80 Q70 85 65 85 H35 Q30 85 30 80 L25 20 Z" fill="white" stroke="#e6ccb2" stroke-width="2"/>
+                        
+                        <path id="drink" d="M27 25 H73 L69 78 Q69 82 65 82 H35 Q31 82 31 78 L27 25 Z" fill="#c89563"/>
+                        
+                        <circle cx="40" cy="75" r="3" fill="#4a3728"/>
+                        <circle cx="50" cy="78" r="3" fill="#4a3728"/>
+                        <circle cx="60" cy="75" r="3" fill="#4a3728"/>
+                        <circle cx="45" cy="68" r="3" fill="#4a3728"/>
+                        <circle cx="55" cy="68" r="3" fill="#4a3728"/>
+
+                        <g id="face">
+                            <circle cx="43" cy="53" r="1.7" fill="#302016"/>
+                            <circle cx="57" cy="53" r="1.7" fill="#302016"/>
+                            <path d="M45 59 Q50 65 55 59" fill="none" stroke="#302016" stroke-width="0.5"/>
+                        </g>
+                    </g>
+                </svg>
+            </div>
+            <p id="status" class="status">Your PFP is ready!</p>
+        </div>
+
+        <div class="panel controls">
+            
+            <label>Expression</label>
+            <div id="expressions" class="grid">
+                <button class="option active" data-face="happy">Happy</button>
+                <button class="option" data-face="chill">Chill</button>
+                <button class="option" data-face="surprised">Surprised</button>
+                <button class="option" data-face="cool">Cool</button>
+                <button class="option" data-face="wink">Wink</button>
+                <button class="option" data-face="sleepy">Sleepy</button>
+            </div>
+
+            <label>Flavor</label>
+            <div id="flavors" class="swatches">
+                <button class="swatch active" data-color="#c89563" style="background: #c89563;"></button>
+                <button class="swatch" data-color="#a3b18a" style="background: #a3b18a;"></button>
+                <button class="swatch" data-color="#b5838d" style="background: #b5838d;"></button>
+                <button class="swatch" data-color="#ffb4a2" style="background: #ffb4a2;"></button>
+            </div>
+
+            <label>Background</label>
+            <div id="backgrounds" class="swatches">
+                <button class="swatch active" data-bg="#fdf6ec" style="background: #fdf6ec;"></button>
+                <button class="swatch" data-bg="#d8e2dc" style="background: #d8e2dc;"></button>
+                <button class="swatch" data-bg="#ffcdb2" style="background: #ffcdb2;"></button>
+            </div>
+
+            <button id="download">Download Avatar PNG</button>
+        </div>
+    </div>
+
+    <footer>
+        Made for Boba Bash Hack Club
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

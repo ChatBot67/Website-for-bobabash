@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 25px 16px 40px;
+    background: #fdf6ec; /* Cream color */
+    color: #4a3728; /* Dark brown text */
+    font-family: sans-serif;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.tag {
+    display: inline-block;
+    padding: 7px 13px;
+    border: 1px solid #e6ccb2;
+    border-radius: 30px;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+h1 {
+    margin: 14px 0 8px;
+    color: #7f5539; /* Medium brown */
+    font-size: 40px;
+}
+
+header p { 
+    color: #88735f; 
+}
+
+.studio {
+    max-width: 950px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.panel {
+    background: white;
+    border: 1px solid #e6ccb2;
+    border-radius: 22px;
+    padding: 22px;
+    box-shadow: 0 10px 30px #4a37280a;
+}
+
+.preview {
+    width: 100%;
+    max-width: 380px;
+    aspect-ratio: 1;
+    margin: auto;
+    border: 3px solid #e6ccb2;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fdf6ec;
+}
+
+#avatar {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 10px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 9px;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+.option {
+    padding: 12px 8px;
+    background: white;
+    color: #7f5539;
+    border: 1.5px solid #e6ccb2;
+    border-radius: 11px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.option:hover { 
+    transform: translateY(-2px); 
+}
+
+.option.active {
+    background: #f0e5d6;
+    border-color: #7f5539;
+    box-shadow: inset 0 0 0 1px #7f5539;
+}
+
+.swatches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.swatch {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 3px solid white;
+    outline: 1px solid #ddc8b2;
+}
+
+.swatch.active {
+    outline: 3px solid #7f5539;
+    outline-offset: 2px;
+}
+
+#download {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 12px;
+    background: #7f5539;
+    color: white;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+#download:hover { 
+    background: #9c6644; 
+}
+
+.status {
+    text-align: center;
+    font-size: 12px;
+    color: #88735f;
+    margin-top: 15px;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12px;
+    color: #927c68;
+}
+
+@media (max-width: 680px) {
+    .studio { grid-template-columns: 1fr; }
+}
